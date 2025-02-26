@@ -10,11 +10,12 @@ dnf install -y zlib-devel wireguard-tools
 ## Tor
 tee /etc/yum.repos.d/tor.repo <<EOF
 [tor]
-name=Tor Repository
-baseurl=https://rpm.torproject.org/fedora/\$releasever/\$basearch/
+name=Tor for Fedora \$releasever - \$basearch
+baseurl=https://rpm.torproject.org/fedora/\$releasever/\$basearch
 enabled=1
 gpgcheck=1
-gpgkey=https://rpm.torproject.org/rpm/public.gpg
+gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
+cost=100
 EOF
 
 dnf update

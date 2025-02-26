@@ -3,4 +3,4 @@
 set -ouex pipefail
 
 ### Install packages
-dnf install -y wireguard-tools
+dnf install -y zlib-devel wireguard-tools

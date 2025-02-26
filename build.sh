@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 ### Install RPM packages
-dnf install -y tor zlib-devel wireguard-tools
+dnf install -y zlib-devel wireguard-tools
 
 ### Install Unofficial RPM packages
 
